@@ -42,7 +42,7 @@ class ViewController: UIViewController {
 
     // MARK: - Notifications
     func keyboardWillShow(notification: NSNotification) {
-        if let keyboardFrame = notification.userInfo?[UIKeyboardFrameEndUserInfoKey]?.CGRectValue() {
+        if let keyboardFrame = notification.userInfo?[UIKeyboardFrameEndUserInfoKey]?.CGRectValue {
             let keyboardHeight = keyboardFrame.size.height
             textView.contentInset = UIEdgeInsetsMake(0, 0, keyboardHeight, 0)
         }
