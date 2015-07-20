@@ -13,7 +13,7 @@
 		9F1012871AA740A400BA214C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F1012861AA740A400BA214C /* Images.xcassets */; };
 		9F10128A1AA740A400BA214C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F1012881AA740A400BA214C /* LaunchScreen.xib */; };
 		9F1012961AA740A400BA214C /* SwipeSelectionBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1012951AA740A400BA214C /* SwipeSelectionBarTests.swift */; };
-		9F1012A01AA7416900BA214C /* SwipeSelectionBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F10129F1AA7416900BA214C /* SwipeSelectionBar.swift */; };
+		9F31E0921B5CCB3D0002DCA0 /* SwipeSelectionBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F31E0911B5CCB3D0002DCA0 /* SwipeSelectionBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,7 @@
 		9F10128F1AA740A400BA214C /* SwipeSelectionBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwipeSelectionBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F1012941AA740A400BA214C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F1012951AA740A400BA214C /* SwipeSelectionBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeSelectionBarTests.swift; sourceTree = "<group>"; };
-		9F10129F1AA7416900BA214C /* SwipeSelectionBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeSelectionBar.swift; sourceTree = "<group>"; };
+		9F31E0911B5CCB3D0002DCA0 /* SwipeSelectionBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwipeSelectionBar.swift; path = ../../SwipeSelectionBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +81,7 @@
 			children = (
 				9F10127F1AA740A400BA214C /* AppDelegate.swift */,
 				9F1012811AA740A400BA214C /* ViewController.swift */,
-				9F10129F1AA7416900BA214C /* SwipeSelectionBar.swift */,
+				9F31E0911B5CCB3D0002DCA0 /* SwipeSelectionBar.swift */,
 				9F1012831AA740A400BA214C /* Main.storyboard */,
 				9F1012861AA740A400BA214C /* Images.xcassets */,
 				9F1012881AA740A400BA214C /* LaunchScreen.xib */,
@@ -219,7 +219,7 @@
 			files = (
 				9F1012821AA740A400BA214C /* ViewController.swift in Sources */,
 				9F1012801AA740A400BA214C /* AppDelegate.swift in Sources */,
-				9F1012A01AA7416900BA214C /* SwipeSelectionBar.swift in Sources */,
+				9F31E0921B5CCB3D0002DCA0 /* SwipeSelectionBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

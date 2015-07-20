@@ -35,10 +35,10 @@ class SwipeSelectionBar: UIToolbar {
     }
     
     required init(textView: UITextView) {
-        super.init()
         self.textView = textView
-        self.frame = CGRectMake(0, 0, 0, 44)
         
+        super.init(frame: CGRectMake(0, 0, 0, 44))
+
         panGestureRecognizer = UIPanGestureRecognizer(target: self, action: "panAction:")
         panGestureRecognizer.cancelsTouchesInView = false
         self.addGestureRecognizer(panGestureRecognizer)
@@ -54,7 +54,7 @@ class SwipeSelectionBar: UIToolbar {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func observeValueForKeyPath(keyPath: String, ofObject object: AnyObject, change: [NSObject : AnyObject], context: UnsafeMutablePointer<Void>) {
+    override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
         if textView.isEqual(object) && keyPath == "selectedTextRange" {
             if let selectedTextRange = textView.selectedTextRange {
                 if selectedTextRange.empty {
@@ -75,8 +75,8 @@ class SwipeSelectionBar: UIToolbar {
             let positionEnd = selectedTextRange.end
             let empty = selectedTextRange.empty
             
-            var fromPosition: UITextPosition?
-            var toPosition: UITextPosition?
+            var fromPosition: UITextPosition!
+            var toPosition: UITextPosition!
             
             if direction == .Left {
                 if empty {
